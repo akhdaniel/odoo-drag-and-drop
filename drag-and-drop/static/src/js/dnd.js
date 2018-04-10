@@ -99,7 +99,6 @@ FormController.include({
         var self = this;
         $(document).off("refresh_attachment");
         $(document).on("refresh_attachment", function() {
-            console.log(self, odoo, session);
             self.sidebar.updateEnv(self.sidebar.env);
         });
         return _super;
